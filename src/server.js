@@ -4,7 +4,7 @@ const socketio = require('socket.io');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
-const index = fs.readFileSync('{__dirname}/../client/client.html');
+const index = fs.readFileSync(`${__dirname}/../client/client.html`);
 
 const onRequest = (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html ' });
